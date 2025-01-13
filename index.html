@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Columna para el formulario -->
+            <div class="col-md-6">
+                <h2>Realiza tu Pedido</h2>
+                <p>Completa el formulario para realizar tu pedido.</p>
+
+                <form id="formulario">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="correo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="menu">Menú</label>
+                        <select class="form-control" id="menu" name="menu" required>
+                            <option value="Menu 1">Menú 1</option>
+                            <option value="Menu 2">Menú 2</option>
+                            <option value="Menu 3">Menú 3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descripcion">Descripción</label>
+                        <textarea class="form-control" id="descripcion" name="descripcion" rows="4" placeholder="Detalles adicionales de tu pedido..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="hidden" id="fecha" name="fecha">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Registrar Pedido</button>
+                </form>
+
+                <p id="notificacion" class="mt-3"></p>
+            </div>
+
+            <!-- Columna para la imagen -->
+            <div class="col-md-6">
+                <img src="images/IndexBak.jpg" alt="Imagen de Menú" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

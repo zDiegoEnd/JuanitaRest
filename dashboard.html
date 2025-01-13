@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Pedidos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos-dashboard.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Tablero de Pedidos</a>
+        <div class="ml-auto">
+            <button class="btn btn-outline-light" id="notificacionBtn">
+                <i class="fas fa-bell"></i> Notificaciones <span id="count" class="badge badge-light">0</span>
+            </button>
+            <button class="btn btn-outline-light ml-3">
+                <i class="fas fa-user"></i> Usuario
+            </button>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Pedidos Recientes</h2>
+
+        <div id="notificacionTablero" class="alert alert-success" style="display: none;">
+            ¡Nuevo pedido registrado!
+        </div>
+
+        <table class="table table-striped" id="tablaPedidos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Menú</th>
+                    <th>Descripción</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se llenarán los pedidos dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
