@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+}
+
+#notification-icon {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+#notification-badge {
+    display: none;
+}
+
+.notifications-container {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 1;
+    max-width: 300px;
+    display: none;
+}
